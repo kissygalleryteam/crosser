@@ -10,4 +10,37 @@
 
     [!]
 
+<<<<<<< HEAD
+=======
+初始demo，在后端配置代码如下：
+
+    <script>
+
+    if('postMessage' in window) {
+        window.top.postMessage("success", "*");
+    }else {
+        window.parent.name = 'success';
+    }
+
+    </script>
+
+前端调用方式：
+
+
+    S.use('kg/crosser/0.0.1/index', function (S, Crosser) {
+        document.getElementById('btn').onclick = function(){
+            new Crosser({
+                //'http://b.shangpo.com/mine/practice/cross/data.php',
+                url: './data.php',
+                data: {
+                    'name': 'shangpo'
+                },
+                success: function(){
+                    alert('ok');
+                }
+            })
+
+        };
+    })
+>>>>>>> df0f5c69bbd3325be3c79698fccb944683094572
 
