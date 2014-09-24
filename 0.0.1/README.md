@@ -17,13 +17,13 @@
 初始demo，在后端配置代码如下：
 
 
-    <script>
+
     if('postMessage' in window) {
         window.top.postMessage("success", "*");
     }else {
         window.parent.name = 'success';
     }
-    </script>
+
 
 
 前端调用方式：
@@ -44,5 +44,5 @@
 
         };
     })
->>>>>>> d9d522a2d0ab62c31a46f93d13221e08ac786b4c
+>>>>>>> d7d0a30e2fe14fd671ae0c7b88daa87cb74a3fbc
 
